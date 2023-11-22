@@ -1,0 +1,21 @@
+@media only screen and (max-width: 394px) {
+    .body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .start-page-content {
+        background-color: #98fbb7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 110vh;
+
+        .start-page-text-3 {
+            width: 250px;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "id": "laRtvD8YwZ2vfYHx67DaNUa0_HMepuWMk7f5jP2I3kwSBrU",
+    "accountId": "U-9MNGkZDNWKblgIjk19mzjY_8f_aOSZ-UV6xVzsGG-Xbls",
+    "puuid": "FXDSTA22UxyAG0cuQds5U_kXTDkGAB5sW9r9eGz3JvW0bw063Nhn4T4ubjYT7sGCiTIaFyq_DCiGrg",
+    "name": "ddevindevout",
+    "profileIconId": 1588,
+    "revisionDate": 1700461273000,
+    "summonerLevel": 307
+}
+{
+    "id": "ELnuG9lpWaJDuE94a0qGIAJpm2L_Td8w4jfvQJvf8HikuLtx",
+    "accountId": "dSO_Yp9aUymAtJpsPXDFkDQkZYZK2QvKJvXpABa0vjLgwQQiFkfZDnCP",
+    "puuid": "55AEK5rxdj26s0ZhSEU0tCCQglyfWBbfnOyXKJnjFWNuEFqjDkWojqpBIE_k_KGx7MPE8tuThI8wsg",
+    "name": "Moontiddies",
+    "profileIconId": 5922,
+    "revisionDate": 1700471895291,
+    "summonerLevel": 62
+}
+{
+    "id": "Pl3qnoCVkrJq4ge-qFyt8GOP3-vTR2bnVK76h-uctruNDKw",
+    "accountId": "kH3qEL1iZwTEENgtAZhydwU3oSPPE1fX_fTW5EM4B9-v77M",
+    "puuid": "Md7ppCcYL1IRvF3ObqQkejWm1JXFAFnAuZ634ee16quswwnvmlz77WxaC8wMNm37P19caLMEirGAwg",
+    "name": "Scentz",
+    "profileIconId": 5460,
+    "revisionDate": 1700461273000,
+    "summonerLevel": 263
+}
+{
+    "id": "1WGgIkeJAP-_leFL24-dlcnoc0fW1fXXEhNwr9NfgIUlXOQ",
+    "accountId": "-7G0sy9PC8rbVy9B5b7ne9pfGDK3FEE7gh1UwDzMbWp6EGs",
+    "puuid": "3KkK0SI6mBCHerEx8KtfeEiaC6ACaWNAhMalbYX2e_DBayrNrcCKCKYkHqZRLyN2d4a_ihczOyHv7w",
+    "name": "JellyBellyIce",
+    "profileIconId": 22,
+    "revisionDate": 1700386214000,
+    "summonerLevel": 237
+}
+{
+    "id": "Zo2DYuoeVPuFTwzP4diXecm6zEBhGsXPIV6bSnS2CMrRY-E",
+    "accountId": "pH3NLUYMGIdD3F0fjp3eU6AQLWySJ97IqTGcKzvSaVXmiZ0",
+    "puuid": "Z75T4ybATeiY5HSJuF0oprG5WsT1qXvRWustCBzM0xgBbYdp6kZoI5x0x7vkW3AhAoCxlUI3UxdBBg",
+    "name": "KSlipp",
+    "profileIconId": 6366,
+    "revisionDate": 1700464824603,
+    "summonerLevel": 378
+}
+First Game was at 1667621786413 (11/4/2022 at 9:16 PM)

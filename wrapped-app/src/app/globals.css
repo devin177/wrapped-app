@@ -1,0 +1,25 @@
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.header {
+    color: white;
+    position: fixed;
+    left: 150px;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    color: white;
+    position: fixed;
+    bottom: 10px;
+    left: 165px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
