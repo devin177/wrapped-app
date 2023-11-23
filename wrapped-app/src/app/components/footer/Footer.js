@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { Link, animateScroll as scroll } from 'react-scroll';
+import './footer.css';
 
 const Footer = ({currentPage, setPage, numPages}) => {
     return ((currentPage < numPages) &&
@@ -9,7 +10,6 @@ const Footer = ({currentPage, setPage, numPages}) => {
                 to={"page" + (currentPage+1).toString()}
                 spy={true}
                 smooth={true}
-                offset={10}
                 onSetActive={() => {
                     setPage(currentPage+1)
                 }}

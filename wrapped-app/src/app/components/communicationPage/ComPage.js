@@ -19,8 +19,8 @@ const ComPageInitialText = ({handleTap}) => {
                 triggerOnce
                 damping="1"
             >
-                    <p className={'com-page-text-top'}>We did some talking this year</p>
-                    <p className={'com-page-text-bottom'}>...a lot of it</p>
+                    <p className={'com-page-text-top'}>And because of that, we started talking</p>
+                    <p className={'com-page-text-bottom'}>...a lot</p>
                     <Button onClick={() =>{
                         handleTap()
                     }}>Continue</Button>
@@ -73,14 +73,14 @@ const ComPageStats = () => {
     )
 }
 
-const ComPage = () => {
+const ComPage = ({page}) => {
     const [hasTapped, setHasTapped] = useState(false);
     const handleTap = () => {
         setHasTapped(true);
     }
     
     return (
-        <div  id="page2" className={'com-page-content'}>
+        <div id={page} className={'com-page-content'}>
             {!hasTapped &&
                 <ComPageInitialText
                     handleTap={handleTap}

@@ -1,0 +1,19 @@
+@media only screen and (max-width: 394px) {
+    .body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .intro-page-content {
+        background-color: rgb(88, 160, 111);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 1000px;
+
+        .intro-page-text-1 {
+            margin-top: 300px;
+        }
+    }
+}

@@ -5,9 +5,9 @@ import bashImage from 'public/images/bash.jpeg';
 import heartImage from 'public/images/heart.png';
 import './sharePage.css';
 
-const SharePage = () => {
+const SharePage = ({page}) => {
     return(
-        <div id="page3" className={'share-page-content'}>
+        <div id={page} className={'share-page-content'}>
             <Paper
                 className={"share-page-paper"}
                 square

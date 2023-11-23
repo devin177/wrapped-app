@@ -5,7 +5,7 @@ p {
 .header {
     color: white;
     position: fixed;
-    left: 150px;
+    left: 145px;
     z-index: 1;
     display: flex;
     flex-direction: row;
@@ -17,7 +17,7 @@ p {
     color: white;
     position: fixed;
     bottom: 10px;
-    left: 165px;
+    left: 150px;
     display: flex;
     flex-direction: row;
     justify-content: center;
