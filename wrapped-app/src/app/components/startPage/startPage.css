@@ -8,10 +8,13 @@
         background-color: #98fbb7;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         width: 100vw;
-        height: 110vh;
+        height: 1000px;
+
+        .start-page-text-1 {
+            margin-top: 300px;
+        }
 
         .start-page-text-3 {
             width: 250px;

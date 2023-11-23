@@ -14,7 +14,7 @@ const StartPage = () => {
                 fraction="1"
                 damping="0.5"
             >
-                <p>Year 1 Wrapped</p>
+                <p className={'start-page-text-1'}>Year 1 Wrapped</p>
                 <p>This year went by quick!</p>
                 <p className={'start-page-text-3'}>Let's look back and revisit Year 1 of Devin and Regina</p>
             </Fade>
