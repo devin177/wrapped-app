@@ -9,7 +9,7 @@ const StartPage = ({page}) => {
                 cascade
                 triggerOnce
                 up
-                duration="5000"
+                duration="4000"
                 smooth
                 fraction="1"
                 damping="0.5"

@@ -73,7 +73,7 @@ const ComPageStats = () => {
     )
 }
 
-const ComPage = ({page}) => {
+const ComPage = ({page, setShowFooter}) => {
     const [hasTapped, setHasTapped] = useState(false);
     const handleTap = () => {
         setHasTapped(true);
@@ -86,7 +86,7 @@ const ComPage = ({page}) => {
                     handleTap={handleTap}
                 />
             }
-            {hasTapped && <ComPageStats />}
+            {hasTapped && <ComPageStats setShowFooter={setShowFooter}/>}
         </div>
     )
 }
