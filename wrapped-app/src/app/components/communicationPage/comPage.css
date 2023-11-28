@@ -32,7 +32,7 @@
                 color: white;
 
                 .texts-image {
-                    width: 27.5%;
+                    width: 22.5%;
                     height: auto;
                     rotate: -4.5deg;
                     margin-left: 40px;
@@ -48,7 +48,7 @@
                 color: white;
 
                 .discord-image {
-                    width: 27.5%;
+                    width: 22.5%;
                     height: auto;
                     rotate: 4.5deg;
                     margin-right: 25px;
@@ -63,7 +63,7 @@
                 align-items: center;
                 
                 .ig-image {
-                    width: 27.5%;
+                    width: 22.5%;
                     height: auto;
                     rotate: -4.5deg;
                     margin-left: 40px;

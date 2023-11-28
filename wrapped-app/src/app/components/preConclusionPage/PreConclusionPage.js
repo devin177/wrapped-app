@@ -16,8 +16,8 @@ const PreConclusionIntro = ({handleTap}) => {
                 damping={1}
                 className={'preconclusion-intro-content'}
             >
-                <p className={'preconclusion-text preconclusion-text-1'}>We've gone far and wide, and have had so many wonderful experiences together.</p>
-                <p className={'preconclusion-text'}>I couldn't capture everything on this app, but I tried to put some of the moments that made me smile the most into this.</p>
+                <p className={'preconclusion-text preconclusion-text-1'}>We've gone far and wide, and have had so many wonderful experiences together this year.</p>
+                <p className={'preconclusion-text'}>I couldn't capture everything on this page, so I threw some of the moments that made me smile the most into this video.</p>
                 <Image
                     src={RandomBS}
                     alt={"random bs"}

@@ -34,10 +34,11 @@
             .distance-page-stats-text {
                 text-align: center;
                 width: 250px;
+                margin-bottom: 20px;
             }
         
-            .distance-page-stats-intro {
-                margin-top: 50px;
+            .distance-page-stats-fact {
+                margin-top: 20px;
                 width: 250px;
                 text-align: center;
             }

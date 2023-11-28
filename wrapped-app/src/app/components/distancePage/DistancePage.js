@@ -105,6 +105,7 @@ const DistancePageIntroContent = () => {
         <div className={'distance-page-stats'}>
             <Fade
                 cascade
+                triggerOnce
                 duration={2000}
                 damping={0.75}
             >
@@ -113,7 +114,10 @@ const DistancePageIntroContent = () => {
                         <DistancePageGraph/>
                     </div>
                 }
-                <p className={'distance-page-stats-text'}>In total, we've travelled over 1,110 miles to see each other!</p>
+                <div>
+                    <p className={'distance-page-stats-text'}>In total, we've travelled over 1,110 miles to see each other.</p>
+                    <p className={'distance-page-stats-text'}>That's enough to travel from Hanoi to Ho Chi Minh City!</p>
+                </div>
                 {!showFact && <Button onClick={() => setShowFact(true)}>Continue</Button>}
             </Fade>
             {showFact &&
@@ -122,7 +126,7 @@ const DistancePageIntroContent = () => {
                     duration={2000}
                     cascade
                     damping={0.75}
-                    className={'distance-page-stats-intro'}
+                    className={'distance-page-stats-fact'}
                 >
                     <p>Fun Fact: I still have the boarding pass from my first trip to visit you!</p>
                     <Image
