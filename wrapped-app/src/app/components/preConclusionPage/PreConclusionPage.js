@@ -34,7 +34,7 @@ const PreConclusionIntro = ({handleTap}) => {
 const PreConclusionVideo = () => {
     return (
         <div className="video">
-            <ReactPlayer loop url='https://www.youtube.com/shorts/RBr7L6FJQH4' width={350} height={600}/>
+            <ReactPlayer loop url='https://youtube.com/shorts/tMFU4XDyE0A?si=x1Ri0bqHfdC7kd5S' width={350} height={600}/>
         </div>
     )
 }
