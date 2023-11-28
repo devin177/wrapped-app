@@ -10,33 +10,26 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import './globals.css'
 import DistancePage from './components/distancePage/DistancePage';
+import PreConclusionPage from './components/preConclusionPage/PreConclusionPage';
 
 export default function Page() {
     const [currentPage, setPage] = useState(1);
+
     return (
-        // <Stories
-        //     stories={[
-        //         {
-        //             content: (props) => (
-        //                 <SharePage/>
-        //             )
-        //         },
-        //         'https://example.com/image.jpg',
-        //     ]}
-        // />
         <div className={'page'}>
             <Header currentPage={currentPage} setPage={setPage}/>
             <div>
-                <StartPage page={'page1'}/>
-                <IntroPage page={'page2'}/>
-                <ComPage page={'page3'}/>
-                <DistancePage page={'page4'}/>
-                <SharePage page={'page5'}/>
+                {<StartPage page={'page1'}/>}
+                {<IntroPage page={'page2'}/>}
+                {<ComPage page={'page3'}/>}
+                {<DistancePage page={'page4'}/>}
+                {<PreConclusionPage page={'page5'}/>}
+                {<SharePage page={'page6'}/>}
             </div>
             <Footer
                 currentPage={currentPage}
                 setPage={setPage}
-                numPages={5}
+                numPages={6}
             />
         </div>
     )

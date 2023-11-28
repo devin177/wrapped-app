@@ -13,10 +13,11 @@ const StartPage = ({page}) => {
                 smooth
                 fraction="1"
                 damping="0.5"
+                className={'start-page-text'}
             >
-                <p className={'start-page-text-1'}>Year 1 Wrapped</p>
-                <p>This year went by quick!</p>
-                <p className={'start-page-text-3'}>Let's look back and revisit Year 1 of Devin and Regina</p>
+                <p className={'start-page-text-1'}>Welcome to our Relationship Wrapped Year 1, Regina</p>
+                <p>This year has gone by so quickly, and we've made so many memories.</p>
+                <p>Let's take a moment to revisit some our favorite!</p>
             </Fade>
         </div>
     )
