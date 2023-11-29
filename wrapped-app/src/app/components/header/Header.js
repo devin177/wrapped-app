@@ -10,6 +10,7 @@ const Header = ({currentPage, setPage, isPlaying, setIsPlaying}) => {
     const musicList = ["/sounds/temp.mp3", "/sounds/happy.mp3", "/sounds/marriedLife.mp3", "/sounds/talkSong.mp3"];
     const [play, exposedData] = useSound(musicList[currentPage]);
     play();
+    setIsPlaying(true);
 
     useEffect(() => {
         exposedData.stop();
