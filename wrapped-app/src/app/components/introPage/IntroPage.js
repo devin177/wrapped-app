@@ -7,6 +7,7 @@ import { Button } from "@mui/material";
 import kneelingNaruto from 'public/images/kneelingNaruto.jpg';
 import standingNaruto from 'public/images/standingNaruto.jpg';
 import armAroundNaruto from 'public/images/armAroundNaruto.jpg';
+import Footer from "../footer/Footer";
 
 const IntroPageIntro = ({handleClick}) => {
     return (
@@ -29,7 +30,7 @@ const IntroPageIntro = ({handleClick}) => {
     )
 }
 
-const IntroPageHalloweenPics = () => {
+const IntroPageHalloweenPics = ({currentPage, setPage, numPages}) => {
     return (
         <Fade
             cascade
@@ -43,11 +44,12 @@ const IntroPageHalloweenPics = () => {
                 className={'arm-around-naruto'}
             />
             <p>And so we did!</p>
+            <Footer currentPage={currentPage} setPage={setPage} numPages={numPages}/>
         </Fade>
     )
 }
 
-const IntroPage = ({page}) => {
+const IntroPage = ({page, currentPage, setPage, numPages}) => {
     const [showHalloweenPics, setShowHalloweenPics] = useState(false);
     const handleClick = () => {
         setShowHalloweenPics(true);
@@ -55,7 +57,7 @@ const IntroPage = ({page}) => {
     return (
         <div id={page} className={'intro-page-content'}>
             {!showHalloweenPics && <IntroPageIntro handleClick={handleClick}/>}
-            {showHalloweenPics && <IntroPageHalloweenPics/>}
+            {showHalloweenPics && <IntroPageHalloweenPics currentPage={currentPage} setPage={setPage} numPages={numPages}/>}
         </div>
     )
 }

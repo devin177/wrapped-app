@@ -6,6 +6,7 @@ import Image from 'next/image';
 import firstText from 'public/images/firstText.png';
 import firstDiscord from 'public/images/firstDiscord.png';
 import firstIG from 'public/images/firstIG.png';
+import Footer from '../footer/Footer';
 
 
 const ComPageInitialText = ({handleTap}) => {
@@ -29,7 +30,7 @@ const ComPageInitialText = ({handleTap}) => {
     )
 }
 
-const ComPageStats = () => {
+const ComPageStats = ({currentPage, setPage, numPages}) => {
     return (
         <div className={'com-page-stats'}>
             <Fade
@@ -68,12 +69,13 @@ const ComPageStats = () => {
                         <p>8,792 Instagram DMs</p>
                     </span>
                 </div>
+                <Footer currentPage={currentPage} setPage={setPage} numPages={numPages}/>
             </Fade>
         </div>
     )
 }
 
-const ComPage = ({page, setShowFooter}) => {
+const ComPage = ({page, currentPage, setPage, numPages}) => {
     const [hasTapped, setHasTapped] = useState(false);
     const handleTap = () => {
         setHasTapped(true);
@@ -86,7 +88,7 @@ const ComPage = ({page, setShowFooter}) => {
                     handleTap={handleTap}
                 />
             }
-            {hasTapped && <ComPageStats setShowFooter={setShowFooter}/>}
+            {hasTapped && <ComPageStats currentPage={currentPage} setPage={setPage} numPages={numPages}/>}
         </div>
     )
 }

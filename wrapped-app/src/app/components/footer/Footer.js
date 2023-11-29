@@ -4,7 +4,7 @@ import './footer.css';
 
 const Footer = ({currentPage, setPage, numPages}) => {
     return ((currentPage < numPages) &&
-        <div className='footer'>
+        <div className={"footer"}>
             <Link
                 activeClass="active"
                 to={"page" + (currentPage+1).toString()}

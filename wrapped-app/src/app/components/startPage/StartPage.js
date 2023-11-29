@@ -1,10 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import './startPage.css';
 import {Fade} from "react-awesome-reveal";
+import Footer from "../footer/Footer";
+import { Link } from "react-scroll";
 
-const StartPage = ({page}) => {
+const StartPage = ({page, currentPage, setPage, numPages}) => {
     return(
-        <div id={page} className={'start-page-content'}>
+        <div id={page} className={`start-page-content`}>
             <Fade
                 cascade
                 triggerOnce
@@ -18,6 +20,7 @@ const StartPage = ({page}) => {
                 <p className={'start-page-text-1'}>Welcome to our Relationship Wrapped Year 1, Regina</p>
                 <p>This year has gone by so quickly, and we've made so many memories.</p>
                 <p>Let's take a moment to revisit some our favorite!</p>
+                <Footer currentPage={currentPage} setPage={setPage} numPages={numPages}/>
             </Fade>
         </div>
     )

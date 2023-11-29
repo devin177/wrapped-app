@@ -14,23 +14,19 @@ import PreConclusionPage from './components/preConclusionPage/PreConclusionPage'
 
 export default function Page() {
     const [currentPage, setPage] = useState(1);
+    const numPages = 6;
 
     return (
         <div className={'page'}>
             <Header currentPage={currentPage} setPage={setPage}/>
             <div>
-                {<StartPage page={'page1'}/>}
-                {<IntroPage page={'page2'}/>}
-                {<ComPage page={'page3'}/>}
-                {<DistancePage page={'page4'}/>}
-                {<PreConclusionPage page={'page5'}/>}
-                {<SharePage page={'page6'}/>}
+                {<StartPage page={'page1'} currentPage={currentPage} setPage={setPage} numPages={numPages}/>}
+                {<IntroPage page={'page2'} currentPage={currentPage} setPage={setPage} numPages={numPages}/>}
+                {<ComPage page={'page3'} currentPage={currentPage} setPage={setPage} numPages={numPages}/>}
+                {<DistancePage page={'page4'} currentPage={currentPage} setPage={setPage} numPages={numPages}/>}
+                {<PreConclusionPage page={'page5'} currentPage={currentPage} setPage={setPage} numPages={numPages}/>}
+                {<SharePage page={'page6'} currentPage={currentPage} setPage={setPage} numPages={numPages}/>}
             </div>
-            <Footer
-                currentPage={currentPage}
-                setPage={setPage}
-                numPages={6}
-            />
         </div>
     )
 }

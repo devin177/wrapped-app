@@ -6,6 +6,7 @@ import { Bar } from "react-chartjs-2";
 import { BarElement,  CategoryScale,Chart as ChartJS,Legend, LinearScale,Title, Tooltip } from "chart.js";
 import Image from 'next/image';
 import planeTicket from 'public/images/planeTicket.jpg';
+import Footer from "../footer/Footer";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement,Title,Tooltip,Legend);
 
@@ -15,6 +16,7 @@ const DistancePageIntro = ({handleTap}) => {
             <Fade
                 cascade
                 duration={2000}
+                damping={0.75}
                 triggerOnce
             >
                 <p>When talking wasn't enough, we went to visit each other</p>
@@ -97,12 +99,13 @@ const DistancePageGraph = () => {
     return (<Bar options={option} data={data} width={300} height={400}/>)
 }
 
-const DistancePageIntroContent = () => {
+const DistancePageIntroContent = ({currentPage, setPage, numPages}) => {
     const [showGraph, setShowGraph] = useState(true);
     const [showFact, setShowFact] = useState(false);
 
     return (
         <div className={'distance-page-stats'}>
+            {!showFact && 
             <Fade
                 cascade
                 triggerOnce
@@ -119,7 +122,7 @@ const DistancePageIntroContent = () => {
                     <p className={'distance-page-stats-text'}>That's enough to travel from Hanoi to Ho Chi Minh City!</p>
                 </div>
                 {!showFact && <Button onClick={() => setShowFact(true)}>Continue</Button>}
-            </Fade>
+            </Fade>}
             {showFact &&
                 <Fade
                     triggerOnce
@@ -134,13 +137,14 @@ const DistancePageIntroContent = () => {
                         className={'plane-ticket-image'}
                         alt="first plane ticket"
                     />
+                    <Footer currentPage={currentPage} setPage={setPage} numPages={numPages}/>
                 </Fade>
             }
         </div>
     )
 }
 
-const DistancePage = ({page}) => {
+const DistancePage = ({page, currentPage, setPage, numPages}) => {
     const [showStats, setShowStats] = useState(false);
     const handleTap =() => {
         setShowStats(true)
@@ -148,7 +152,7 @@ const DistancePage = ({page}) => {
     return (
         <div id={page} className={'distance-page-content'}>
             {!showStats && <DistancePageIntro handleTap={handleTap}/>}
-            {showStats && <DistancePageIntroContent/>}
+            {showStats && <DistancePageIntroContent currentPage={currentPage} setPage={setPage} numPages={numPages}/>}
         </div>
     )
 }
