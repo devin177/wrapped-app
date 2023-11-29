@@ -11,14 +11,17 @@ import Footer from './components/footer/Footer';
 import './globals.css'
 import DistancePage from './components/distancePage/DistancePage';
 import PreConclusionPage from './components/preConclusionPage/PreConclusionPage';
+import MusicPlayer from './components/musicPlayer/MusicPlayer';
 
 export default function Page() {
     const [currentPage, setPage] = useState(1);
+    const [isPlaying, setIsPlaying] = useState(false);
+
     const numPages = 6;
 
     return (
         <div className={'page'}>
-            <Header currentPage={currentPage} setPage={setPage}/>
+            <Header currentPage={currentPage} setPage={setPage} isPlaying={isPlaying} setIsPlaying={setIsPlaying}/>
             <div>
                 {<StartPage page={'page1'} currentPage={currentPage} setPage={setPage} numPages={numPages}/>}
                 {<IntroPage page={'page2'} currentPage={currentPage} setPage={setPage} numPages={numPages}/>}

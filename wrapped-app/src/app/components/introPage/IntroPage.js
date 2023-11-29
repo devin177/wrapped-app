@@ -8,6 +8,7 @@ import kneelingNaruto from 'public/images/kneelingNaruto.jpg';
 import standingNaruto from 'public/images/standingNaruto.jpg';
 import armAroundNaruto from 'public/images/armAroundNaruto.jpg';
 import Footer from "../footer/Footer";
+import useSound from "use-sound";
 
 const IntroPageIntro = ({handleClick}) => {
     return (
@@ -54,6 +55,7 @@ const IntroPage = ({page, currentPage, setPage, numPages}) => {
     const handleClick = () => {
         setShowHalloweenPics(true);
     }
+    const [play, exposedData] = useSound("/sounds/marriedLife.mp3");
     return (
         <div id={page} className={'intro-page-content'}>
             {!showHalloweenPics && <IntroPageIntro handleClick={handleClick}/>}
