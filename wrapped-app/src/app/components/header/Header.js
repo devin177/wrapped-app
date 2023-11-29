@@ -12,6 +12,7 @@ const Header = ({currentPage, setPage, isPlaying, setIsPlaying}) => {
 
     useEffect(() => {
         exposedData.stop();
+        play();
       }, [currentPage]);
 
     return (currentPage > 1 &&
