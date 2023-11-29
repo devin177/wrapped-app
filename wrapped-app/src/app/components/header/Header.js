@@ -6,9 +6,13 @@ import { IconButton } from "@mui/material";
 import { PlayArrow } from "@mui/icons-material";
 import PauseIcon from '@mui/icons-material/Pause';
 
-const Header = ({currentPage, setPage, isPlaying, setIsPlaying}) => {
+const Header = ({currentPage, setPage}) => {
     const musicList = ["/sounds/temp.mp3", "/sounds/happy.mp3", "/sounds/marriedLife.mp3", "/sounds/talkSong.mp3"];
     const [play, exposedData] = useSound(musicList[currentPage]);
+    let isPlaying = false;
+    const setIsPlaying = (value) => {
+        isPlaying = value;
+    }
     play();
     setIsPlaying(true);
 
