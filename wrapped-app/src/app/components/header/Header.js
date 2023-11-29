@@ -9,10 +9,10 @@ import PauseIcon from '@mui/icons-material/Pause';
 const Header = ({currentPage, setPage, isPlaying, setIsPlaying}) => {
     const musicList = ["/sounds/temp.mp3", "/sounds/happy.mp3", "/sounds/marriedLife.mp3", "/sounds/talkSong.mp3"];
     const [play, exposedData] = useSound(musicList[currentPage]);
+    play();
 
     useEffect(() => {
         exposedData.stop();
-        play();
       }, [currentPage]);
 
     return (currentPage > 1 &&
