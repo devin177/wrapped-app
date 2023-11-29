@@ -15,9 +15,9 @@ const Header = ({currentPage, setPage, isPlaying, setIsPlaying}) => {
         exposedData.stop();
       }, [currentPage]);
 
-    return (currentPage > 1 &&
+    return (
         <div>
-            <Link
+            {currentPage > 1 && <Link
                 activeClass="active"
                 to={"page1"}
                 spy={true}
@@ -27,7 +27,7 @@ const Header = ({currentPage, setPage, isPlaying, setIsPlaying}) => {
                 className='header'
             >
                 <p>Scroll to Top</p>
-            </Link>
+            </Link>}
             <div className='music-player'>
                 <IconButton color={'white'} onClick={() => {
                     if (!isPlaying) {
