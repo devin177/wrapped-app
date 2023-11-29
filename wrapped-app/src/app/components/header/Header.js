@@ -13,6 +13,7 @@ const Header = ({currentPage, setPage, isPlaying, setIsPlaying}) => {
 
     useEffect(() => {
         exposedData.stop();
+        setIsPlaying(false);
       }, [currentPage]);
 
     return (
@@ -31,9 +32,6 @@ const Header = ({currentPage, setPage, isPlaying, setIsPlaying}) => {
             <div className='music-player'>
                 <IconButton color={'white'} onClick={() => {
                     if (!isPlaying) {
-                        play();
-                    } else {
-                        exposedData.stop();
                         play();
                     }
                     setIsPlaying(true);
