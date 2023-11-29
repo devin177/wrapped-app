@@ -28,7 +28,7 @@ const Header = ({currentPage, setPage, isPlaying, setIsPlaying}) => {
                 <p>Scroll to Top</p>
             </Link>
             <div className='music-player'>
-                <IconButton color={white} onClick={() => {
+                <IconButton color={'white'} onClick={() => {
                     if (!isPlaying) {
                         play();
                     } else {
@@ -39,7 +39,7 @@ const Header = ({currentPage, setPage, isPlaying, setIsPlaying}) => {
                 }}>
                     <PlayArrow/>
                 </IconButton>
-                <IconButton color={white} onClick={() => {
+                <IconButton color={'white'} onClick={() => {
                     exposedData.pause();
                     setIsPlaying(false);
                 }}>
