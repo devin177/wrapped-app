@@ -16,6 +16,7 @@ const IntroPageIntro = ({handleClick}) => {
             cascade
             triggerOnce
             duration={2000}
+            damping={0.8}
         >
             <p className={'intro-page-text-1'}>We first met on October 22nd, 2022 at a VSA speed friending event.</p>
             <Image
@@ -37,6 +38,7 @@ const IntroPageHalloweenPics = ({currentPage, setPage, numPages}) => {
             cascade
             triggerOnce
             duration={2000}
+            damping={0.8}
         >
             <p className={'halloween-pic-text'}>You messaged me on Halloween, asking to meet up and take some pictures...</p>
             <Image
