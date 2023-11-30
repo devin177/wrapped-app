@@ -52,13 +52,6 @@ const Header = ({currentPage, setPage}) => {
                 }}>
                     <PauseIcon color="action"/>
                 </IconButton>
-                <IconButton onClick={() => {
-                    setMuted(!muted);
-                    document.querySelectorAll('audio, video').forEach(el => el.muted = muted);
-                }}>
-                    {!muted && <VolumeOffIcon/>}
-                    {muted && <VolumeUpIcon/>}
-                </IconButton>
             </div>
         </div>
     )
