@@ -35,19 +35,19 @@ const Header = ({currentPage, setPage}) => {
                 <p>Scroll to Top</p>
             </Link>}
             <div className='music-player'>
-                <IconButton color={'white'} onClick={() => {
+                <IconButton onClick={() => {
                     if (!isPlaying) {
                         play();
                     }
                     setIsPlaying(true);
                 }}>
-                    <PlayArrow/>
+                    <PlayArrow color="action"/>
                 </IconButton>
-                <IconButton color={'white'} onClick={() => {
+                <IconButton onClick={() => {
                     exposedData.pause();
                     setIsPlaying(false);
                 }}>
-                    <PauseIcon/>
+                    <PauseIcon color="action"/>
                 </IconButton>
             </div>
         </div>
