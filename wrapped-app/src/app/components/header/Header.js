@@ -57,13 +57,13 @@ const Header = ({currentPage, setPage}) => {
                     }
                     setIsPlaying(true);
                 }}>
-                    <PlayArrow color="action"/>
+                    <PlayArrow style={{ color: '#fff' }}/>
                 </IconButton>
                 <IconButton onClick={() => {
                     exposedData.pause();
                     setIsPlaying(false);
                 }}>
-                    <PauseIcon color="action"/>
+                    <PauseIcon style={{ color: '#fff' }}/>
                 </IconButton>
             </div>
         </div>

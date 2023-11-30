@@ -1,52 +1,51 @@
-@media only screen and (max-width: 450px) {
-    .body {
-        margin: 0;
-        padding: 0;
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.distance-page-content {
+    background-color: rgb(27, 197, 197);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 1000px;
+
+    .distance-page-header {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        margin-top: 300px;
+        text-align: center;
     }
 
-    .distance-page-content {
-        background-color: rgb(27, 197, 197);
+    .distance-page-stats {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100vw;
-        height: 1000px;
+        margin-top: 50px;
+        color: white;
+        height: 400px;
 
-        .distance-page-header {
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        .distance-page-stats-text {
+            text-align: center;
             width: 250px;
-            margin-top: 300px;
+            margin-bottom: 20px;
+        }
+    
+        .distance-page-stats-fact {
+            margin-top: 20px;
+            width: 250px;
             text-align: center;
         }
 
-        .distance-page-stats {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 50px;
-            color: white;
-            height: 400px;
-
-            .distance-page-stats-text {
-                text-align: center;
-                width: 250px;
-                margin-bottom: 20px;
-            }
-        
-            .distance-page-stats-fact {
-                margin-top: 20px;
-                width: 250px;
-                text-align: center;
-            }
-
-            .plane-ticket-image {
-                width: 80%;
-                height: auto;
-            }
+        .plane-ticket-image {
+            width: 80%;
+            height: auto;
         }
     }
 }
+

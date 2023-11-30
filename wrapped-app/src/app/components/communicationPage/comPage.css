@@ -1,74 +1,72 @@
-@media only screen and (max-width: 450px) {
-    .body {
-        margin: 0;
-        padding: 0;
-    }
+.body {
+    margin: 0;
+    padding: 0;
+}
 
-    .com-page-content {
-        background-color: rgb(0, 0, 0);
+.com-page-content {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 1000px;
+
+    .com-page-header {
+        color: white;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        width: 100vw;
-        height: 1000px;
+        width: 250px;
+        margin-top: 200px;
+        text-align: center;
+    }
 
-        .com-page-header {
-            color: white;
+    .com-page-stats {
+        .texts {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            flex-direction: row;
             align-items: center;
-            width: 250px;
-            margin-top: 200px;
-            text-align: center;
+            margin-top: 50px;
+            color: white;
+
+            .texts-image {
+                width: 22.5%;
+                height: auto;
+                rotate: -4.5deg;
+                margin-left: 40px;
+                margin-right: 80px;
+            }
+        }
+        
+        .discord {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            color: white;
+
+            .discord-image {
+                width: 22.5%;
+                height: auto;
+                rotate: 4.5deg;
+                margin-right: 25px;
+                margin-left: 25px;
+            }
         }
 
-        .com-page-stats {
-            .texts {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                margin-top: 50px;
-                color: white;
-
-                .texts-image {
-                    width: 22.5%;
-                    height: auto;
-                    rotate: -4.5deg;
-                    margin-left: 40px;
-                    margin-right: 80px;
-                }
-            }
+        .instagram {
+            color: white;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
             
-            .discord {
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-end;
-                align-items: center;
-                color: white;
-
-                .discord-image {
-                    width: 22.5%;
-                    height: auto;
-                    rotate: 4.5deg;
-                    margin-right: 25px;
-                    margin-left: 25px;
-                }
-            }
-
-            .instagram {
-                color: white;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                
-                .ig-image {
-                    width: 22.5%;
-                    height: auto;
-                    rotate: -4.5deg;
-                    margin-left: 40px;
-                    margin-right: 35px;
-                }
+            .ig-image {
+                width: 22.5%;
+                height: auto;
+                rotate: -4.5deg;
+                margin-left: 40px;
+                margin-right: 35px;
             }
         }
     }
