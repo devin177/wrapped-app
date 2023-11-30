@@ -5,9 +5,18 @@ import Footer from "../footer/Footer";
 import { Link } from "react-scroll";
 
 const StartPage = ({page, currentPage, setPage, numPages}) => {
+    const [started, setStarted] = useState(false);
+    
     return(
-        <div id={page} className={`start-page-content`}>
-            <Fade
+        <div id={page} className={`start-page-content`}
+            onClick={() => {
+                setStarted(true);
+            }}
+        >
+            {!started &&
+                <p className={'start-page-text start-page-text-1'}>Touch anywhere to start</p>
+            }
+            {started && <Fade
                 cascade
                 triggerOnce
                 up
@@ -21,7 +30,7 @@ const StartPage = ({page, currentPage, setPage, numPages}) => {
                 <p>This year has gone by so quickly, and we've made so many memories.</p>
                 <p>Let's take a moment to revisit some our favorite!</p>
                 <Footer currentPage={currentPage} setPage={setPage} numPages={numPages}/>
-            </Fade>
+            </Fade>}
         </div>
     )
 }
