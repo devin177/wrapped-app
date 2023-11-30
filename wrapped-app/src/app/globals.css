@@ -22,6 +22,7 @@ p {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    text-align: center;
 }
 
 .music-player {
