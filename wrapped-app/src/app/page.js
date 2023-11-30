@@ -11,13 +11,14 @@ import Footer from './components/footer/Footer';
 import './globals.css'
 import DistancePage from './components/distancePage/DistancePage';
 import PreConclusionPage from './components/preConclusionPage/PreConclusionPage';
+import ConclusionPage from './components/conclusionPage/ConclusionPage';
 import MusicPlayer from './components/musicPlayer/MusicPlayer';
 
 export default function Page() {
     const [currentPage, setPage] = useState(1);
     const [isPlaying, setIsPlaying] = useState(false);
 
-    const numPages = 6;
+    const numPages = 7;
 
     return (
         <div className={'page'}>
