@@ -55,7 +55,7 @@ const SharePage = ({page}) => {
                     width='30'
                     height='30'
                 />
-                <p>devin.gina.2023</p>
+                <p>devin-regina-wrapped-2023</p>
             </div>
         </div>
     )
