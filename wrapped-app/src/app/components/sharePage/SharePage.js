@@ -26,6 +26,14 @@ const SharePage = ({page}) => {
                     </p>
                     <span className={'share-page-left-text'}>
                         <p className="text">111 Arams</p>
+                        <p className="text">51W 60L</p>
+                    </span>
+
+                    <p className="share-page-text-header">
+                        Travel
+                    </p>
+                    <span className={'share-page-left-text'}>
+                        <p className="text">1188.6 Miles</p>
                     </span>
 
                     <p className="share-page-text-header">
@@ -44,6 +52,12 @@ const SharePage = ({page}) => {
                         <p className="text">42,553 Texts</p>
                         <p className="text">8,792 Instagram DM's</p>
                         <p className="text">520 Discord Messages</p>
+                    </span>
+                    <p className="share-page-text-header">
+                        Days Together
+                    </p>
+                    <span className={'share-page-right-text'}>
+                        <p className="text">365</p>
                     </span>
                 </span>
             </span>
