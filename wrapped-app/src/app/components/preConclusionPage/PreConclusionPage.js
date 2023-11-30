@@ -36,6 +36,7 @@ const PreConclusionVideo = ({currentPage, setPage, numPages}) => {
     return (
         <div className="video">
             <ReactPlayer loop url='https://youtube.com/shorts/tMFU4XDyE0A?si=x1Ri0bqHfdC7kd5S' width={350} height={600}/>
+            <Footer currentPage={currentPage} setPage={setPage} numPages={numPages}/>
         </div>
     )
 }
