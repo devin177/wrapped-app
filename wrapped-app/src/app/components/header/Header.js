@@ -5,8 +5,11 @@ import useSound from "use-sound";
 import { IconButton } from "@mui/material";
 import { PlayArrow } from "@mui/icons-material";
 import PauseIcon from '@mui/icons-material/Pause';
+import VolumeOffIcon from '@mui/icons-material/VolumeOff';
+import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 
 const Header = ({currentPage, setPage}) => {
+    const [muted, setMuted] = useState(false);
     const musicList = ["/sounds/temp.mp3", "/sounds/happy.mp3", "/sounds/marriedLife.mp3", "/sounds/talkSong.mp3"];
     const [play, exposedData] = useSound(musicList[currentPage]);
     let isPlaying = false;
@@ -48,6 +51,13 @@ const Header = ({currentPage, setPage}) => {
                     setIsPlaying(false);
                 }}>
                     <PauseIcon color="action"/>
+                </IconButton>
+                <IconButton onClick={() => {
+                    setMuted(!muted);
+                    document.querySelectorAll('audio, video').forEach(el => el.muted = muted);
+                }}>
+                    {!muted && <VolumeOffIcon/>}
+                    {muted && <VolumeUpIcon/>}
                 </IconButton>
             </div>
         </div>
