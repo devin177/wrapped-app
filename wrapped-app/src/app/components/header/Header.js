@@ -9,7 +9,6 @@ import VolumeOffIcon from '@mui/icons-material/VolumeOff';
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 
 const Header = ({currentPage, setPage}) => {
-    const [muted, setMuted] = useState(false);
     const musicList = ["/sounds/temp.mp3", "/sounds/happy.mp3", "/sounds/marriedLife.mp3", "/sounds/talkSong.mp3"];
     const [play, exposedData] = useSound(musicList[currentPage]);
     let isPlaying = false;
