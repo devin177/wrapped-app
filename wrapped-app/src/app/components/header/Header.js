@@ -9,7 +9,15 @@ import VolumeOffIcon from '@mui/icons-material/VolumeOff';
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 
 const Header = ({currentPage, setPage}) => {
-    const musicList = ["/sounds/temp.mp3", "/sounds/happy.mp3", "/sounds/marriedLife.mp3", "/sounds/talkSong.mp3"];
+    const musicList = [
+        "/sounds/temp.mp3",
+        "/sounds/superShy.mp3",
+        "/sounds/marriedLife.mp3",
+        "/sounds/talkSong.mp3",
+        "/sounds/over85.mp3",
+        "",
+        "/sounds/happy.mp3"
+    ];
     const [play, exposedData] = useSound(musicList[currentPage]);
     let isPlaying = false;
     const setIsPlaying = (value) => {
