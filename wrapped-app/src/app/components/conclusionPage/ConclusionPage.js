@@ -24,7 +24,7 @@ const ConclusionPage = ({page, currentPage, setPage, numPages}) => {
 
     return (
         <div className={'conclusion-page-content'} id={page}>
-            <PreConclusionIntro/>
+            <ConclusionIntro/>
             <Footer currentPage={currentPage} setPage={setPage} numPages={numPages}/>
         </div>
     )
