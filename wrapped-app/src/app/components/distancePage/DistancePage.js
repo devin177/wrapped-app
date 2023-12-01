@@ -113,9 +113,7 @@ const DistancePageIntroContent = ({currentPage, setPage, numPages}) => {
                 damping={0.75}
             >
                 {showGraph &&
-                    <div>
-                        <DistancePageGraph/>
-                    </div>
+                    <DistancePageGraph/>
                 }
                 <p className={'distance-page-stats-text'}>In total, we've travelled over 1,110 miles to see each other.</p>
                 <p className={'distance-page-stats-text'}>That's enough to travel from Hanoi to Ho Chi Minh City!</p>
