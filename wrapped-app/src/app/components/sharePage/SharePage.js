@@ -5,6 +5,7 @@ import bashImage from 'public/images/bash.jpeg';
 import heartImage from 'public/images/heart.png';
 import './sharePage.css';
 import Footer from '../footer/Footer';
+import { Fade } from 'react-awesome-reveal';
 
 const SharePage = ({page, currentPage, setPage, numPages}) => {
     return(
@@ -72,7 +73,13 @@ const SharePage = ({page, currentPage, setPage, numPages}) => {
                 />
                 <p>devin-regina-wrapped-2023</p>
             </div>
-            <Footer text={'Next Page...?'} currentPage={currentPage} setPage={setPage} numPages={numPages}/>
+            <Fade
+                triggerOnce
+                duration={2000}
+                damping={0.75}
+            >
+                <Footer text={'Next Page...?'} currentPage={currentPage} setPage={setPage} numPages={numPages}/>
+            </Fade>
         </div>
     )
 }
