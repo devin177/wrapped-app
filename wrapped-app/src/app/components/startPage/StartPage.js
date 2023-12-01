@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import url('./startPage.css');
+import './startPage.css';
 import {Fade} from "react-awesome-reveal";
 import Footer from "../footer/Footer";
 import { Link } from "react-scroll";
