@@ -117,10 +117,8 @@ const DistancePageIntroContent = ({currentPage, setPage, numPages}) => {
                         <DistancePageGraph/>
                     </div>
                 }
-                <div>
-                    <p className={'distance-page-stats-text'}>In total, we've travelled over 1,110 miles to see each other.</p>
-                    <p className={'distance-page-stats-text'}>That's enough to travel from Hanoi to Ho Chi Minh City!</p>
-                </div>
+                <p className={'distance-page-stats-text'}>In total, we've travelled over 1,110 miles to see each other.</p>
+                <p className={'distance-page-stats-text'}>That's enough to travel from Hanoi to Ho Chi Minh City!</p>
                 {!showFact && <Button onClick={() => setShowFact(true)}>Continue</Button>}
             </Fade>}
             {showFact &&
