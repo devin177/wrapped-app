@@ -14,6 +14,7 @@ const ConclusionIntro = ({handleTap}) => {
                 className={'conclusion-intro-content'}
             >
                 <p className={'conclusion-text conclusion-text-1'}>That's it for this year's Relationship Wrapped.</p>
+                <p className={'conclusion-text'}>We've gone far and wide, and have had so many wonderful experiences together this year.</p>
                 <p className={'conclusion-text'}>I love you Regina, and can't wait for all the new adventures we'll have next year.</p>
             </Fade>
         </div>

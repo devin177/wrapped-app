@@ -4,8 +4,9 @@ import Paper from '@mui/material/Paper'
 import bashImage from 'public/images/bash.jpeg';
 import heartImage from 'public/images/heart.png';
 import './sharePage.css';
+import Footer from '../footer/Footer';
 
-const SharePage = ({page}) => {
+const SharePage = ({page, currentPage, setPage, numPages}) => {
     return(
         <div id={page} className={'share-page-content'}>
             <Paper
@@ -71,6 +72,7 @@ const SharePage = ({page}) => {
                 />
                 <p>devin-regina-wrapped-2023</p>
             </div>
+            <Footer text={'Next Page...?'} currentPage={currentPage} setPage={setPage} numPages={numPages}/>
         </div>
     )
 }

@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { Link, animateScroll as scroll } from 'react-scroll';
 import './footer.css';
 
-const Footer = ({currentPage, setPage, numPages}) => {
+const Footer = ({currentPage, setPage, numPages, text}) => {
     return ((currentPage < numPages) &&
         <div className={"footer"}>
             <Link
@@ -14,7 +14,7 @@ const Footer = ({currentPage, setPage, numPages}) => {
                     setPage(currentPage+1)
                 }}
             >
-                <p>Next Page</p>
+                <p>{text ? text : "Next Page"}</p>
             </Link>
         </div>
     )

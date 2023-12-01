@@ -16,9 +16,9 @@ const Header = ({currentPage, setPage}) => {
         "/sounds/marriedLife.mp3",
         "/sounds/talkSong.mp3",
         "/sounds/over85.mp3",
-        "",
         "/sounds/seven.mp3",
-        "/sounds/happy.mp3"
+        "/sounds/happy.mp3",
+        ""
     ];
     let hookOptions = {};
     if (currentPage == numPages) {

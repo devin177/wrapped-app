@@ -28,9 +28,9 @@ export default function Page() {
                 {<IntroPage page={'page2'} currentPage={currentPage} setPage={setPage} numPages={numPages}/>}
                 {<ComPage page={'page3'} currentPage={currentPage} setPage={setPage} numPages={numPages}/>}
                 {<DistancePage page={'page4'} currentPage={currentPage} setPage={setPage} numPages={numPages}/>}
-                {<PreConclusionPage page={'page5'} currentPage={currentPage} setPage={setPage} numPages={numPages}/>}
-                {<ConclusionPage page={'page6'} currentPage={currentPage} setPage={setPage} numPages={numPages}/>}
-                {<SharePage page={'page7'} currentPage={currentPage} setPage={setPage} numPages={numPages}/>}
+                {<ConclusionPage page={'page5'} currentPage={currentPage} setPage={setPage} numPages={numPages}/>}
+                {<SharePage page={'page6'} currentPage={currentPage} setPage={setPage} numPages={numPages}/>}
+                {<PreConclusionPage page={'page7'} currentPage={currentPage} setPage={setPage} numPages={numPages}/>}
             </div>
         </div>
     )

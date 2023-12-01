@@ -17,8 +17,7 @@ const PreConclusionIntro = ({handleTap}) => {
                 damping={1}
                 className={'preconclusion-intro-content'}
             >
-                <p className={'preconclusion-text preconclusion-text-1'}>We've gone far and wide, and have had so many wonderful experiences together this year.</p>
-                <p className={'preconclusion-text'}>I couldn't capture everything on this page, so I tossed the rest of our happiest moments into this video.</p>
+                <p className={'preconclusion-text-1'}>I couldn't capture everything on this page, so I tossed the rest of our happiest moments into this video.</p>
                 <Image
                     src={RandomBS}
                     alt={"random bs"}
@@ -32,11 +31,10 @@ const PreConclusionIntro = ({handleTap}) => {
     )
 }
 
-const PreConclusionVideo = ({currentPage, setPage, numPages}) => {
+const PreConclusionVideo = () => {
     return (
         <div className="video">
             <ReactPlayer url='https://youtube.com/shorts/tMFU4XDyE0A?si=x1Ri0bqHfdC7kd5S' width={350} height={600}/>
-            <Footer currentPage={currentPage} setPage={setPage} numPages={numPages}/>
         </div>
     )
 }
@@ -51,7 +49,7 @@ const PreConclusionPage = ({page, currentPage, setPage, numPages}) => {
         <div className={'preconclusion-page-content'} id={page}>
             {/* <ReactPlayer width={300} height={400} className={'player'} url='https://youtube.com/shorts/RBr7L6FJQH4?si=xZybU2E305BfVLzD'/> */}
             {!showVideo && <PreConclusionIntro handleTap={handleTap}/>}
-            {showVideo && <PreConclusionVideo currentPage={currentPage} setPage={setPage} numPages={numPages}/>}
+            {showVideo && <PreConclusionVideo/>}
         </div>
     )
 }
