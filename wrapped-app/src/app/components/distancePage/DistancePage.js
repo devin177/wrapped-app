@@ -106,19 +106,22 @@ const DistancePageIntroContent = ({currentPage, setPage, numPages}) => {
     return (
         <div className={'distance-page-stats'}>
             {!showFact && 
-            <Fade
+            <div>
+                <Fade
                 cascade
                 triggerOnce
                 duration={2000}
                 damping={0.75}
-            >
+                className={'distance-page-stats-text'}
+                >
                 {showGraph &&
                     <DistancePageGraph/>
                 }
-                <p className={'distance-page-stats-text'}>In total, we've travelled over 1,110 miles to see each other.</p>
-                <p className={'distance-page-stats-text'}>That's enough to travel from Hanoi to Ho Chi Minh City!</p>
+                <p>In total, we've travelled over 1,110 miles to see each other.</p>
+                <p>That's enough to travel from Hanoi to Ho Chi Minh City!</p>
                 {!showFact && <Button onClick={() => setShowFact(true)}>Continue</Button>}
-            </Fade>}
+            </Fade>
+            </div>}
             {showFact &&
                 <Fade
                     triggerOnce
