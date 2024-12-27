@@ -13,6 +13,7 @@ const StartPage = ({page, currentPage, setPage, numPages}) => {
                 setStarted(true);
             }}
         >
+            <p>If you're reading this, I never blocked your number :)</p>
             {!started &&
                 <p className={'start-page-text start-page-text-1'}>Touch anywhere to start</p>
             }
