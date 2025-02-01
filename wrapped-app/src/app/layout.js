@@ -1,4 +1,5 @@
 import localFont from 'next/font/local'
+import { Analytics } from '@vercel/analytics/next';
 
 const gotham = localFont({
   src: [
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={gotham.className}>
         {children}
+        <Analytics />
       </body>
     </html>
   )
